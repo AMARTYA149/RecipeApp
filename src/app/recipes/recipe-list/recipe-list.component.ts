@@ -14,9 +14,9 @@ export class RecipeListComponent implements OnInit {
       'https://1.bp.blogspot.com/-KeCawc8_1Xk/XQ_u6jCkWwI/AAAAAAAAJGg/K6R3tsNEhpobjcEZd-dlzU3VXny7lkGngCLcBGAs/s1600/IMG_20190616_203154.jpg'
     ),
     new Recipe(
-      'Chilly Paneer',
-      'Spicy Paneer with Red Sauce Gravy',
-      'https://1.bp.blogspot.com/-KeCawc8_1Xk/XQ_u6jCkWwI/AAAAAAAAJGg/K6R3tsNEhpobjcEZd-dlzU3VXny7lkGngCLcBGAs/s1600/IMG_20190616_203154.jpg'
+      'Kadhai Paneer',
+      'Spicy Paneer with Onion Gravy',
+      'https://www.indianhealthyrecipes.com/wp-content/uploads/2016/03/kadai-paneer-1-500x375.jpg'
     ),
   ];
   constructor() {}
