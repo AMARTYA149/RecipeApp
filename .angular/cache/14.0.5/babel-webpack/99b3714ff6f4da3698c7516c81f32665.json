@@ -1,0 +1,1 @@
+{"ast":null,"code":"/**\n * Convert Map, Set to Array\n */\nexport function convertToArray(val) {\n  if (val instanceof Map) {\n    return Array.from(val.values());\n  }\n\n  return Array.isArray(val) ? val : Array.from(val);\n} //# sourceMappingURL=convert-to-array.util.js.map","map":null,"metadata":{},"sourceType":"module"}

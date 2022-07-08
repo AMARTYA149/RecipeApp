@@ -1,0 +1,1 @@
+{"ast":null,"code":"// Deprecated.\nimport withMetadataArgument from '../min/exports/withMetadataArgument.js';\nimport _isValidNumber from '../es6/validate.js';\nexport function isValidNumber() {\n  return withMetadataArgument(_isValidNumber, arguments);\n}","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.defaultCacheOptions = void 0;\nexports.defaultCacheOptions = {\n  ttl: 5,\n  max: 100,\n  store: 'memory'\n};","map":null,"metadata":{},"sourceType":"script"}

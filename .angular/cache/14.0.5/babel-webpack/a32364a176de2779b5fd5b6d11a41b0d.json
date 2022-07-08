@@ -1,0 +1,1 @@
+{"ast":null,"code":"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.randomStringGenerator = void 0;\n\nconst uuid_1 = require(\"uuid\");\n\nconst randomStringGenerator = () => (0, uuid_1.v4)();\n\nexports.randomStringGenerator = randomStringGenerator;","map":null,"metadata":{},"sourceType":"script"}

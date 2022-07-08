@@ -1,0 +1,1 @@
+{"ast":null,"code":"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.forwardRef = void 0;\n\nconst forwardRef = fn => ({\n  forwardRef: fn\n});\n\nexports.forwardRef = forwardRef;","map":null,"metadata":{},"sourceType":"script"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"import withMetadataArgument from './withMetadataArgument.js';\nimport { findNumbers as _findNumbers } from '../../core/index.js';\nexport function findNumbers() {\n  return withMetadataArgument(_findNumbers, arguments);\n}","map":null,"metadata":{},"sourceType":"module"}

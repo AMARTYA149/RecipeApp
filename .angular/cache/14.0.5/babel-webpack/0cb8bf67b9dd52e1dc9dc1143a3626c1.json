@@ -1,0 +1,1 @@
+{"ast":null,"code":"import withMetadataArgument from './withMetadataArgument.js';\nimport { validatePhoneNumberLength as _validatePhoneNumberLength } from '../../core/index.js';\nexport function validatePhoneNumberLength() {\n  return withMetadataArgument(_validatePhoneNumberLength, arguments);\n}","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"import withMetadataArgument from './withMetadataArgument.js';\nimport { getCountries as _getCountries } from '../../core/index.js';\nexport function getCountries() {\n  return withMetadataArgument(_getCountries, arguments);\n}","map":null,"metadata":{},"sourceType":"module"}

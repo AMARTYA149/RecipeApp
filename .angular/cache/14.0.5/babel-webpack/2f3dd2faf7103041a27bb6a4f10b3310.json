@@ -1,0 +1,1 @@
+{"ast":null,"code":"import withMetadataArgument from './withMetadataArgument.js';\nimport { parsePhoneNumberWithError as _parsePhoneNumberWithError } from '../../core/index.js';\nexport function parsePhoneNumberWithError() {\n  return withMetadataArgument(_parsePhoneNumberWithError, arguments);\n}","map":null,"metadata":{},"sourceType":"module"}

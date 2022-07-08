@@ -1,0 +1,1 @@
+{"ast":null,"code":"// Deprecated.\nimport withMetadataArgument from '../min/exports/withMetadataArgument.js';\nimport _isPossibleNumber from '../es6/isPossibleNumber.js';\nexport function isPossibleNumber() {\n  return withMetadataArgument(_isPossibleNumber, arguments);\n}","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.FORBIDDEN_MESSAGE = void 0;\nexports.FORBIDDEN_MESSAGE = 'Forbidden resource';","map":null,"metadata":{},"sourceType":"script"}

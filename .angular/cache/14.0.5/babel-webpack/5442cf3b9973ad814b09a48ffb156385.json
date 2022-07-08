@@ -1,0 +1,1 @@
+{"ast":null,"code":"import withMetadataArgument from '../min/exports/withMetadataArgument.js';\nimport _getNumberType from '../es6/getNumberType.js';\nexport function getNumberType() {\n  return withMetadataArgument(_getNumberType, arguments);\n}","map":null,"metadata":{},"sourceType":"module"}

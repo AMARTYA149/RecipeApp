@@ -1,0 +1,1 @@
+{"ast":null,"code":"import crypto from 'crypto';\n\nfunction md5(bytes) {\n  if (Array.isArray(bytes)) {\n    bytes = Buffer.from(bytes);\n  } else if (typeof bytes === 'string') {\n    bytes = Buffer.from(bytes, 'utf8');\n  }\n\n  return crypto.createHash('md5').update(bytes).digest();\n}\n\nexport default md5;","map":null,"metadata":{},"sourceType":"module"}

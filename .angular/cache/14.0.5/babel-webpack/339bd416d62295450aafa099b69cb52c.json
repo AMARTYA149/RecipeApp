@@ -1,0 +1,1 @@
+{"ast":null,"code":"import withMetadataArgument from '../min/exports/withMetadataArgument.js';\nimport _format from '../es6/format.js';\nexport function format() {\n  return withMetadataArgument(_format, arguments);\n}","map":null,"metadata":{},"sourceType":"module"}

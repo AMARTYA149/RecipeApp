@@ -1,0 +1,1 @@
+{"ast":null,"code":"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nconst iterate_1 = require(\"./iterate\");\n\nexports.iterate = iterate_1.iterate;\nexports.zip = iterate_1.zip;\nexports.default = iterate_1.iterate; //# sourceMappingURL=index.js.map","map":null,"metadata":{},"sourceType":"script"}

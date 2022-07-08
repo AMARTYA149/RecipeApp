@@ -1,0 +1,1 @@
+{"ast":null,"code":"import withMetadataArgument from './withMetadataArgument.js';\nimport { getExtPrefix as _getExtPrefix } from '../../core/index.js';\nexport function getExtPrefix() {\n  return withMetadataArgument(_getExtPrefix, arguments);\n}","map":null,"metadata":{},"sourceType":"module"}
