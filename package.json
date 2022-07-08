@@ -3,14 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ng run serve:ssr",
+    "build": "ng run build:ssr",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "dev:ssr": "ng run recipe-app:serve-ssr",
     "serve:ssr": "node dist/recipe-app/server/main.js",
-    "build:ssr": "ng build && ng run recipe-app:server",
+    "build:ssr": "ng build --prod && ng run recipe-app:server:production",
     "prerender": "ng run recipe-app:prerender",
     "prebuild:ssr": "ngcc"
   },
@@ -38,7 +38,8 @@
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.5.5",
     "tslib": "^2.0.0",
-    "zone.js": "^0.11.6"
+    "zone.js": "^0.11.6",
+    "node": "16.15.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.0.5",
