@@ -2,6 +2,7 @@ import {
   Component,
   ComponentFactoryResolver,
   OnDestroy,
+  OnInit,
   ViewChild,
 } from '@angular/core';
 import { NgForm } from '@angular/forms';
@@ -18,7 +19,7 @@ import * as AuthActions from './store/auth.actions';
   selector: 'app-auth',
   templateUrl: './auth.component.html',
 })
-export class AuthComponent implements OnDestroy {
+export class AuthComponent implements OnInit, OnDestroy {
   isLoginMode = true;
   isLoading = false;
   error: string = null;
@@ -33,6 +34,16 @@ export class AuthComponent implements OnDestroy {
     private componentFactoryResolver: ComponentFactoryResolver,
     private store: Store<fromApp.AppState>
   ) {}
+
+  ngOnInit(): void {
+    this.store.select('auth').subscribe((authState) => {
+      this.isLoading = authState.loading;
+      this.error = authState.authError;
+      if (this.error) {
+        this.showErrorAlert(this.error);
+      }
+    });
+  }
 
   ngOnDestroy() {
     if (this.closeSub) {
@@ -62,18 +73,18 @@ export class AuthComponent implements OnDestroy {
       authObs = this.authService.signUp(email, password);
     }
 
-    authObs.subscribe(
-      (res) => {
-        console.log(res);
-        this.isLoading = false;
-        this.router.navigate(['/recipes']);
-      },
-      (err) => {
-        this.error = err;
-        this.showErrorAlert(err);
-        this.isLoading = false;
-      }
-    );
+    // authObs.subscribe(
+    //   (res) => {
+    //     console.log(res);
+    //     this.isLoading = false;
+    //     this.router.navigate(['/recipes']);
+    //   },
+    //   (err) => {
+    //     this.error = err;
+    //     this.showErrorAlert(err);
+    //     this.isLoading = false;
+    //   }
+    // );
 
     form.reset();
   }
