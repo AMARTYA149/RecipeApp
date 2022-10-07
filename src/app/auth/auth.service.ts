@@ -148,7 +148,7 @@ export class AuthService {
       })
     );
     this.autoLogout(expiresIn * 1000);
-    localStorage.setItem('userData', JSON.stringify(user));
+    // localStorage.setItem('userData', JSON.stringify(user));
   }
 
   private handleError(errorRes: HttpErrorResponse) {
