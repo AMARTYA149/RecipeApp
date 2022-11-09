@@ -5,7 +5,7 @@ import { Store } from '@ngrx/store';
 import { Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
 import * as fromApp from '../../store/app.reducer';
-import { RecipeService } from '../recipe.service';
+// import { RecipeService } from '../recipe.service';
 import * as RecipesActions from '../store/recipe.actions';
 
 @Component({
@@ -20,7 +20,7 @@ export class RecipeEditComponent implements OnInit, OnDestroy {
   private storeSub: Subscription;
   constructor(
     private route: ActivatedRoute,
-    private recipeService: RecipeService,
+    // private recipeService: RecipeService,
     private router: Router,
     private store: Store<fromApp.AppState>
   ) {}
